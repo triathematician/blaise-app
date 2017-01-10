@@ -6,5 +6,5 @@
 
 ## Related Libraries
 - [firestarter](https://github.com/triathematician/firestarter)
-- [firestarter](https://github.com/triathematician/blaisemath)
+- [blaisemath](https://github.com/triathematician/blaisemath)
 
