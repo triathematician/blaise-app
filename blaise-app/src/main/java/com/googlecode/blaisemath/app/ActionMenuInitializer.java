@@ -1,14 +1,10 @@
-/**
- * ActionMenuInitializer.java
- * Created on Sep 23, 2014
- */
 package com.googlecode.blaisemath.app;
 
 /*
  * #%L
  * BlaiseGraphics
  * --
- * Copyright (C) 2014 - 2016 Elisha Peterson
+ * Copyright (C) 2014 - 2018 Elisha Peterson
  * --
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,11 +28,11 @@ import java.beans.PropertyChangeListener;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.annotation.Nullable;
 import javax.swing.Action;
 import javax.swing.ActionMap;
 import javax.swing.JMenu;
 import javax.swing.JPopupMenu;
+import org.checkerframework.checker.nullness.qual.Nullable;
 
 /**
  * Initializes a context menu using specified keys in an {@link ActionMap}.
