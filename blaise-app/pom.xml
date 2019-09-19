@@ -11,7 +11,7 @@
     <description>
         Application framework to help configure menus and toolbars, extension of BSAF.
     </description>
-    <url>https://github.com/triathematician/blaisemath</url>
+    <url>https://github.com/triathematician/blaise-app</url>
     <inceptionYear>2014</inceptionYear>
     <licenses>
         <license>
@@ -32,14 +32,14 @@
     </developers>
     
     <scm>
-        <url>https://github.com/triathematician/blaisemath</url>
-        <connection>scm:git:git://github.com/triathematician/blaisemath.git</connection>
-        <developerConnection>scm:git:git@github.com:triathematician/blaisemath.git</developerConnection>
+        <url>https://github.com/triathematician/blaise-app</url>
+        <connection>scm:git:git://github.com/triathematician/blaise-app.git</connection>
+        <developerConnection>scm:git:git@github.com:triathematician/blaise-app.git</developerConnection>
         <tag>HEAD</tag>
     </scm>    
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/triathematician/blaisemath/issues</url>
+        <url>https://github.com/triathematician/blaise-app/issues</url>
     </issueManagement>
     <distributionManagement>
         <snapshotRepository>
