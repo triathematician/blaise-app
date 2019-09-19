@@ -26,7 +26,6 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
-import com.google.common.base.Predicates;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import java.awt.event.MouseAdapter;
@@ -143,8 +142,7 @@ public class MenuConfig {
     public static List<Map> readMenuBarConfig(Class cls, String key) throws IOException {
         Object res = readConfig(cls).get(key);
         checkState(res instanceof List, "Expected menubar to be a list of maps but was "+res);
-        checkState(Iterables.all((List) res, Predicates.instanceOf(Map.class)),
-            "Expected list elements of menubar to be maps");
+        checkState(((List) res).stream().allMatch(Map.class::isInstance), "Expected list elements of menubar to be maps");
         return (List<Map>) res;
     }
     
@@ -188,7 +186,7 @@ public class MenuConfig {
         return mapper.readValue(rsc, Map.class);
     }
     
-    //</editor-fold>
+    //endregion
     
     //<editor-fold defaultstate="collapsed" desc="CONVERTING CONFIGURATION CONTENT TO MENUS/ITEMS">
 
@@ -275,7 +273,7 @@ public class MenuConfig {
         return button;
     }
     
-    //</editor-fold>
+    //endregion
     
     //<editor-fold defaultstate="collapsed" desc="GETTING STUFF OUT OF MAPS">
     
@@ -303,7 +301,7 @@ public class MenuConfig {
         return ((Map) en.getValue()).containsKey(key);
     }
     
-    //</editor-fold>
+    //endregion
     
     
     /** Decode options supported for the menu config */

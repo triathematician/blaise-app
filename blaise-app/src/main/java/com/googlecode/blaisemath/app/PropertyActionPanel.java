@@ -1,4 +1,4 @@
-package com.googlecode.blaisemath.ui;
+package com.googlecode.blaisemath.app;
 
 /*
  * #%L
@@ -20,17 +20,12 @@ package com.googlecode.blaisemath.ui;
  * #L%
  */
 
+import com.googlecode.blaisemath.firestarter.property.BeanPropertyModel;
+import com.googlecode.blaisemath.firestarter.property.PropertySheet;
 
-import com.googlecode.blaisemath.firestarter.BeanPropertyModel;
-import com.googlecode.blaisemath.firestarter.PropertySheet;
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-import javax.swing.AbstractAction;
-import javax.swing.Action;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JToolBar;
 
 /**
  * Combines a property editor panel with OK/Cancel buttons.
@@ -79,7 +74,7 @@ public class PropertyActionPanel extends JPanel {
         add(south, BorderLayout.SOUTH);
     }
     
-    //<editor-fold defaultstate="collapsed" desc="PROPERTIES">
+    //region PROPERTIES
     
     public JToolBar getToolBar() {
         return tb;
@@ -118,7 +113,7 @@ public class PropertyActionPanel extends JPanel {
         cancelButton.setVisible(userCancelAction != null);        
     }
     
-    //</editor-fold>
+    //endregion
     
     private void okAction() {
         if (userOkAction != null) {

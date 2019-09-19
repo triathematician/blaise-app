@@ -20,7 +20,6 @@ package com.googlecode.blaisemath.app;
  * #L%
  */
 
-
 import com.google.common.collect.Lists;
 import java.awt.event.ActionEvent;
 import java.lang.reflect.InvocationTargetException;
@@ -53,7 +52,7 @@ public final class OptionMenuConfig {
     /** Reference to a static method invoked to get the selections */
     private String staticMethod;
 
-    //<editor-fold defaultstate="collapsed" desc="PROPERTIES">
+    //region PROPERTIES
     
     public String getAction() {
         return action;
@@ -79,7 +78,7 @@ public final class OptionMenuConfig {
         this.staticMethod = options;
     }
     
-    //</editor-fold>
+    //endregion
 
     /**
      * Creates menu from this config.

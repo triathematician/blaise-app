@@ -21,7 +21,7 @@ package com.googlecode.blaisemath.app;
  */
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import com.googlecode.blaisemath.util.swing.ContextMenuInitializer;
+
 import java.awt.event.ActionEvent;
 import java.awt.geom.Point2D;
 import java.beans.PropertyChangeListener;
@@ -60,8 +60,7 @@ public final class ActionMenuInitializer<S> implements ContextMenuInitializer<S>
     }
     
     @Override
-    public void initContextMenu(JPopupMenu popup, S src, Point2D point,
-            Object focus, Set selection) {
+    public void initContextMenu(JPopupMenu popup, S src, Point2D point, Object focus, Set selection) {
         if (popup.getComponentCount() > 0) {
             popup.addSeparator();
         }

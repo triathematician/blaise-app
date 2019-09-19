@@ -22,7 +22,7 @@ package com.googlecode.blaisemath.app;
 
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import com.googlecode.blaisemath.util.swing.ContextMenuInitializer;
+
 import java.awt.geom.Point2D;
 import java.util.List;
 import java.util.Set;
