@@ -4,7 +4,7 @@
 
     <groupId>com.googlecode.blaisemath</groupId>
     <artifactId>blaise-app</artifactId>
-    <version>1.1.0-beta</version>
+    <version>1.1.1-beta-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <name>blaise-app</name>
@@ -35,7 +35,7 @@
         <url>https://github.com/triathematician/blaise-app</url>
         <connection>scm:git:git://github.com/triathematician/blaise-app.git</connection>
         <developerConnection>scm:git:git@github.com:triathematician/blaise-app.git</developerConnection>
-        <tag>blaise-app-1.1.0-beta</tag>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <system>GitHub Issues</system>
