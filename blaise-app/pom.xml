@@ -36,7 +36,7 @@
         <connection>scm:git:git://github.com/triathematician/blaise-app.git</connection>
         <developerConnection>scm:git:git@github.com:triathematician/blaise-app.git</developerConnection>
         <tag>HEAD</tag>
-    </scm>    
+    </scm>
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/triathematician/blaise-app/issues</url>
