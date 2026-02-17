@@ -2,7 +2,7 @@
  * #%L
  * blaise-app
  * --
- * Copyright (C) 2014 - 2025 Elisha Peterson
+ * Copyright (C) 2014 - 2026 Elisha Peterson
  * --
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ module com.googlecode.blaisemath.app {
     requires java.logging;
 
     requires com.google.common;
-    requires org.checkerframework.checker.qual;
+    requires org.jspecify;
 
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.dataformat.yaml;
