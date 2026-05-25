@@ -21,8 +21,8 @@ package com.googlecode.blaisemath.app;
  */
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.dataformat.yaml.YAMLFactory;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
@@ -31,6 +31,7 @@ import com.google.common.collect.Lists;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
@@ -183,7 +184,9 @@ public class MenuConfig {
         URL rsc = cls.getResource(path);
         checkNotNull(rsc, "Failed to locate "+path);
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-        return mapper.readValue(rsc, Map.class);
+        try (InputStream is = rsc.openStream()) {
+            return mapper.readValue(is, Map.class);
+        }
     }
     
     //endregion
