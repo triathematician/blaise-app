@@ -24,8 +24,8 @@ module com.googlecode.blaisemath.app {
     requires com.google.common;
     requires org.jspecify;
 
-    requires com.fasterxml.jackson.databind;
-    requires com.fasterxml.jackson.dataformat.yaml;
+    requires tools.jackson.databind;
+    requires tools.jackson.dataformat.yaml;
 
     requires bsaf;
 
